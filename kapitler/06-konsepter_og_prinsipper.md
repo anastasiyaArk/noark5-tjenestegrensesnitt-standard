@@ -982,7 +982,7 @@ streames til klient.
 
 **Overføring av filer**
 
-Ved filoverføring opprettes dokumentobjektet først. Ved filopplasting sjekker tjener at Content-Type og Content-Length i filen er identiske med det som er registrert i dataobjektet. Ved feilsituasjoner, f.eks. hvis content-type eller content-length stemmer ikke med det som er registrert returneres 400 Bad request kode.
+Ved filoverføring opprettes dokumentobjektet først. Tjeneren kontrollerer at Content-Type og Content-Length i filen stemmer med innhold i dokumentobjektet. Ved feilsituasjoner, f.eks. hvis Content-Type eller Content-Length ikke stemmer med det som er registrert, returneres 400 Bad request kode.
 
 Hvis den opplastede filen har et format
 tjeneren ikke kjenner igjen, så settes format til 'UNKNOWN'. Når
